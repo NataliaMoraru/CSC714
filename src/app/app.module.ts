@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { MatCardModule } from '@angular/material/card';
 import { SigninComponent } from './components/signin/signin.component';
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { SigninComponent } from './components/signin/signin.component';
     MatCheckboxModule,
     MatInputModule,
     MatCardModule,
+    MatSelectModule,
     MatMenuModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
