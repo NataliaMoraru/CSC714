@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { AppComponent } from './app.component';
-import { LogincomponentComponent } from './logincomponent/logincomponent.component';
+import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutUsComponent } from './components/about-us/about-us.component';
@@ -13,11 +13,10 @@ import { AssignmentComponent } from './components/assignment/assignment.componen
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { MatCardModule } from '@angular/material/card';
-import { SigninComponent } from './signin/signin.component';
+import { SigninComponent } from './components/signin/signin.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LogincomponentComponent,
     AboutUsComponent,
     ContactUsComponent,
     ChapterComponent,
@@ -27,6 +26,7 @@ import { SigninComponent } from './signin/signin.component';
   ],
   imports: [
     BrowserModule,
+    MatSelectModule,
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
