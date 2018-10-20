@@ -15,6 +15,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { MatCardModule } from '@angular/material/card';
 import { SigninComponent } from './components/signin/signin.component';
 import { MatSelectModule } from '@angular/material/select';
+import { MagazineComponent } from './components/magazine/magazine.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { MatSelectModule } from '@angular/material/select';
     ChapterComponent,
     AssignmentComponent,
     HomepageComponent,
-    SigninComponent
+    SigninComponent,
+    MagazineComponent
   ],
   imports: [
     BrowserModule,
