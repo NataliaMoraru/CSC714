@@ -7,7 +7,7 @@
     </mat-card-title>
 
 
-    <mat-card-subtitle style="text-align:center">
+    <mat-card-subtitle style="text-align:center;">
       Engage.Motivate.Inspire
     </mat-card-subtitle>
   </mat-card-header>
@@ -21,6 +21,6 @@
 
 <mat-card [hidden]="!ifgradeclicked">
   <mat-card-content>
-    <img *ngFor="let img of magazines" [src]=img class="magazine-cover" />
+    <img *ngFor="let img of magazines" [src]=img class="magazine-cover" (click)="OpenMagazine(img)"/>
   </mat-card-content>
 </mat-card>
