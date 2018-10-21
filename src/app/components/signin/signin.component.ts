@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SigninService } from './../../signin.service';
-
+import { Router } from '@angular/router';
 export interface School {
   value: string;
   viewValue: string;
@@ -13,7 +13,7 @@ export interface School {
 
 export class SigninComponent implements OnInit {
   
-  constructor(private ser: SigninService) { }
+  constructor(private ser: SigninService, private router: Router) { }
   schools: School[] = [
     { value: '0', viewValue: 'PS-140' },
     { value: '1', viewValue: 'PS-245' },
@@ -25,5 +25,6 @@ export class SigninComponent implements OnInit {
 
   signin() {
     this.ser.setSignin(true);
+    this.router.navigate(['/']);
   }
 }
