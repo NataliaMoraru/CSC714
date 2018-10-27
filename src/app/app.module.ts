@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { MatCardModule } from '@angular/material/card';
 import { SigninComponent } from './components/signin/signin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { SigninComponent } from './components/signin/signin.component';
     MatCardModule,
     MatMenuModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
         path: 'contact-us',

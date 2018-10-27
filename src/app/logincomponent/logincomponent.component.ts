@@ -1,6 +1,7 @@
 import { Component,ViewChild, OnInit } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-logincomponent',
