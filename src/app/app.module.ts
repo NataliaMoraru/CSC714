@@ -51,6 +51,10 @@ import { MagazineComponent } from './components/magazine/magazine.component';
         component: ChapterComponent
       },
       {
+        path: 'magazine/:id',
+        component: MagazineComponent
+      },
+      {
         path: '',
         component: HomepageComponent
       },

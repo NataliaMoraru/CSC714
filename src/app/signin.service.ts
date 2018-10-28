@@ -8,5 +8,5 @@ export class SigninService {
   constructor() { }
   isSignin() { return this.signin; }
   setSignin(val) { this.signin = val; }
-  
+  getMagazine(id) { return "Cat"}
 }
