@@ -25,6 +25,6 @@ export class SigninComponent implements OnInit {
 
   signin() {
     this.ser.setSignin(true);
-    this.router.navigate(['/']);
+    this.router.navigate(['/', ]);
   }
 }
