@@ -12,7 +12,7 @@
     </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content style="display:inline-flex; overflow:auto; width:100%">    
-    <div class="grade" *ngFor="let grade of grades" (click)="ChangeGrade('1')">
+    <div class="grade" *ngFor="let grade of grades" (click)="ChangeGrade(grade)">
       <span>{{grade}}</span>
     </div>
   </mat-card-content>
